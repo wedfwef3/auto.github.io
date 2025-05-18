@@ -9,30 +9,11 @@ task.spawn(function()
     end
 end)
 
-local workspace = game:GetService("Workspace")
-local vampireCastle = workspace:FindFirstChild("VampireCastle")
-
-if vampireCastle then
-    local startTime = os.time()
-
-    while os.time() - startTime < 30 do
-        local bookcase = vampireCastle:FindFirstChild("Bookcase")
-        if bookcase then
-            bookcase:Destroy()
-            print("Bookcase removed!")
-        end
-        task.wait(0.1) -- Short delay to prevent excessive resource use
-    end
-else
-    print("No VampireCastle found in Workspace.")
-end
-
-
 
 
 task.spawn(function()
     task.wait(8) -- ring
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/wedfwef3/tperh.github.io/refs/heads/main/geur.lua"))()
 end)
 
 
@@ -40,5 +21,4 @@ task.spawn(function()
     task.wait(12) -- ring
     loadstring(game:HttpGet("https://raw.githubusercontent.com/wedfwef3/wefwef.github.io/refs/heads/main/erf.lua"))()
 end)
-
 
