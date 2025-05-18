@@ -1,5 +1,5 @@
 task.spawn(function()
-    task.wait(5) -- ring
+    task.wait(5) -- ringta
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/fly.github.io/refs/heads/main/fly.lua"))()
 end)
 
