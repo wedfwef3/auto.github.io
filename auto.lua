@@ -12,20 +12,20 @@ end)
 local workspace = game:GetService("Workspace")
 local vampireCastle = workspace:FindFirstChild("VampireCastle")
 
-if vampireCastle then
-    local startTime = os.time()
+local workspace = game:GetService("Workspace")
+local vampireCastle = workspace:FindFirstChild("VampireCastle")
 
-    while os.time() - startTime < 30 do
+if vampireCastle then
+    while true do
         local bookcase = vampireCastle:FindFirstChild("Bookcase")
         if bookcase then
             bookcase:Destroy()
             print("Bookcase removed!")
         end
-        task.wait(0.1) -- Short delay to prevent excessive resource use
+        task.wait(0.1) -- Keeps checking every 0.1 seconds
     end
 else
-    print("No VampireCastle found in Workspace.")
-end
+    print("No VampireCastle found in Workspace
 
 
 task.spawn(function()
