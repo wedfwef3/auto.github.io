@@ -9,23 +9,23 @@ task.spawn(function()
     end
 end)
 
-local workspace = game:GetService("Workspace")
-local vampireCastle = workspace:FindFirstChild("VampireCastle")
+task.spawn(function()
+    local vampireCastle = game:GetService("Workspace"):FindFirstChild("VampireCastle")
 
-if vampireCastle then
-    task.spawn(function() -- Use task.spawn to prevent blocking
+    if vampireCastle then
         while true do
             local bookcase = vampireCastle:FindFirstChild("Bookcase")
             if bookcase then
                 bookcase:Destroy()
                 print("Bookcase removed!")
             end
-            task.wait(0.1)
+            task.wait(0.1) -- Keeps checking every 0.1 seconds for new bookcases
         end
-    end)
-else
-    print("No VampireCastle found in Workspace.") -- Fix syntax error
-end
+    else
+        print("No VampireCastle found in Workspace.")
+    end
+end)
+
 
 task.spawn(function()
     task.wait(8)
