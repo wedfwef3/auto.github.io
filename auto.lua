@@ -1,12 +1,6 @@
 task.spawn(function()
-    local duration = 15
-    local interval = 3
-    local startTime = tick()
-
-    while tick() - startTime < duration do
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/fly.github.io/refs/heads/main/fly.lua"))()
-        task.wait(interval)
-    end
+    task.wait(9)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/fly.github.io/refs/heads/main/fly.lua"))()
 end)
 
 task.spawn(function()
