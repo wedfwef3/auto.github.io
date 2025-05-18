@@ -27,6 +27,13 @@ else
     print("No VampireCastle found in Workspace.")
 end
 
+for _, part in ipairs(gun:GetDescendants()) do
+    if part:IsA("BasePart") then
+        part.CanCollide = false
+    end
+end
+
+
 
 task.spawn(function()
     task.wait(8) -- ring
