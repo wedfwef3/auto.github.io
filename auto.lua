@@ -6,7 +6,7 @@ end)
 
 task.spawn(function()
     task.wait(8)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ewewe514/vampire.github.io/refs/heads/main/ea.lua"))()
 end)
 
 task.spawn(function()
