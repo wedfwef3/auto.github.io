@@ -1,8 +1,13 @@
 task.spawn(function()
-    task.wait(5) -- ringta
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/fly.github.io/refs/heads/main/fly.lua"))()
-end)
+    local duration = 15 -- Total time to run (seconds)
+    local interval = 3 -- How often to run (seconds)
+    local startTime = tick() -- Get the current time
 
+    while tick() - startTime < duration do
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/fly.github.io/refs/heads/main/fly.lua"))()
+        task.wait(interval) -- Wait before running again
+    end
+end)
 
 task.spawn(function()
     task.wait(8) -- ring
