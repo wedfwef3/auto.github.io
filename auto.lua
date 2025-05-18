@@ -1,4 +1,10 @@
 task.spawn(function()
+    task.wait(5) -- ring
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/fly.github.io/refs/heads/main/fly.lua"))()
+end)
+
+
+task.spawn(function()
     task.wait(8) -- ring
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
 end)
